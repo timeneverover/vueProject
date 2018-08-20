@@ -1,0 +1,121 @@
+html,
+body {
+    height: 100%;
+    font-size: 14px;/*根节点字体大小*/
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.container{
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.content-box,
+.main {
+    height: 95%;
+}
+
+.leftNav {
+    width: 15%;
+    height: 100%;
+    display: inline-block;
+    border-right: 1px solid RGB(0,153,88);
+    /* background-color: RGB(0,153,88); */
+    opacity: 0.85;
+}
+
+.content {
+    padding: 10px;
+    width: 84%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+
+/*  start  */
+.table-box{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+}
+.table thead tr th,
+.table tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+.glyphicon.glyphicon-plus-sign{
+    right: 10px;
+    font-size: 16px;
+    color: #46b8da;
+    float: right;
+    cursor: pointer;
+}
+.table-box .pagination-box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.table-box .pagination-box .pagination{
+    margin: 0;
+}
+.modal .modal-body{/*弹窗内容区域固定高度超出滚动*/
+    /* overflow-y: scroll; */
+}
+.pagination>li>a, .pagination>li>span{
+    color: #4cae4c;
+}
+.pagination>li.clicked>a{
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.navbar-nav .glyphicon,
+.dropdown-menu .glyphicon {
+    margin-right: 10px;
+    color: #4cae4c;
+}
+/*提示框*/
+.publicTipBox{
+    position: absolute;
+    padding:0px 20px;
+    top: 0%;
+    left: 25%;
+    width: 50%;
+    height: 40px;
+    color: #FFFFFF;
+    line-height: 40px;
+    text-align: center;
+	/* background-color: #DC6547; */
+	/* background-color: #398CE2; */
+    border-radius: 5px;
+	opacity: 0.7;
+}
+/*loading*/
+#loadingDiv{
+  height: 60px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -84px;
+  margin-top: -25px;
+  z-index: 101;
+  background-image: url(../assets/loading.gif);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
+}
+#loadingDiv .public_loadingText{
+  color: #333333;
+  font-size: 1em;
+  position: relative;
+  top: 74px;
+}
