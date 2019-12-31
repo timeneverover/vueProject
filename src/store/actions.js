@@ -1,4 +1,7 @@
 import * as types from './mutation-types'
+import Urls from '../publicService/urls.js'
+import TipBoxService from '../publicService/TipBoxService.js'
+import httpService from '../publicService/HttpService.js';
 
 export default {
   getPersonData({
